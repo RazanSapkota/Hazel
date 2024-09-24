@@ -6,6 +6,7 @@ extern Hazel::Application* Hazel::CreateApplication();
 void main(int argc, char** argv)
 {
 	printf("Hazel Application");
+	Hazel::Log::Init();
 	auto app = Hazel::CreateApplication();
 	app->Run();
 	delete app;
